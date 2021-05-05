@@ -1,0 +1,9 @@
+<form action="/login" method="POST" class="d-flex flex-column align-items-center border border-dark rounded">
+  <h1 class="mx-5 mt-4 pb-1">Account Login</h1>
+  <input type="email" placeholder="Email" class="rounded my-3 p-2" name="email" required>
+  <input type="password" placeholder="Password" class="rounded my-3 p-2" name="password" required>
+  <div class="text-center p-0">
+    <p style="color:red; font-size:large;">{{#if error}} {{error}} {{/if}}</p>
+  </div>
+  <button class="btn btn-outline-secondary rounded my-3 p-2" type="submit" style="width:80px;">Sign in</button>
+</form>
